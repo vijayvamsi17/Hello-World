@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+  
+  <script>
+  
+  function getsum(){
+    var a = document.getElementById('a').value;
+	var b = document.getElementById('b').value;
+	var sum = parseInt(a)+parseInt(b);
+	document.getElementById('box').innerHTML = sum;
+	
+	if(a==''){
+     alert("Please enter a value");
+	 }
+	if(b==''){
+     alert("Please enter a value");
+	 }
+	 if(isNaN(a)){
+     alert("Please enter a num");
+	 }
+	
+  }
+  
+    function getsub(){
+    var a = document.getElementById('a').value;
+	var b = document.getElementById('b').value;
+	var sub = parseInt(a)-parseInt(b);
+	document.getElementById('box').innerHTML = sub;
+	
+		if(a==''){
+     alert("Please enter a value");
+	 }
+	if(b==''){
+     alert("Please enter a value");
+	 }
+	
+  }
+  
+    function getmul(){
+    var a = document.getElementById('a').value;
+	var b = document.getElementById('b').value;
+	var mul = parseInt(a)*parseInt(b);
+	document.getElementById('box').innerHTML = mul;
+	
+		if(a==''){
+     alert("Please enter a value");
+	 }
+	if(b==''){
+     alert("Please enter a value");
+	 }
+	
+  }
+  
+    function getdiv(){
+    var a = document.getElementById('a').value;
+	var b = document.getElementById('b').value;
+	var div = parseInt(a)/parseInt(b);
+	document.getElementById('box').innerHTML = div;
+	
+		if(a==''){
+     alert("Please enter a value");
+	 }
+	if(b==''){
+     alert("Please enter a value");
+	 }
+	
+  }
+
+  
+  </script>
+  
+</head>
+
+<style>
+
+.body{
+border:2px solid black; 
+padding: 50px;
+width: 500px;
+height: 500px;
+margin: 50px auto;
+}
+
+.form{
+margin-left: 90px;
+margin-top: 25px;
+}
+
+#b{
+margin-top: 25px;
+}
+
+#result{
+float: left;
+margin-left: 35px;
+width: 85px;
+}
+
+
+</style>
+ 
+<body>
+
+<div class="body"> 
+<h1 style="text-align:center;">Calculator</h1>
+<div class="form">
+<b>Enter a Value:</b><input type="text" id="a"/> <br />
+<b>Enter a Value:</b><input type="text" id="b"/> <br />
+
+</div>
+
+<div id="box" style="border:2px solid black; width: 50px; padding: 150px 220px; margin: 10px 10px;"></div>
+<input type="button" value="ADD" id="result" onclick="getsum()">
+
+
+<input type="button" value="SUBTRACT" id="result" onclick="getsub()">
+
+
+<input type="button" value="MULTIPLY" id="result" onclick="getmul()">
+
+
+<input type="button" value="DIVIDE" id="result" onclick="getdiv()">
+</div>
+
+</body>
+
+
+</html>
+
+
+
+
+
+  
